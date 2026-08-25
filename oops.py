@@ -543,16 +543,16 @@
 
 ##====Operator Overloading====
 ##Ex.
-class Student:
-    def __init__(self, marks):
-        self.marks = marks
+# class Student:
+#     def __init__(self, marks):
+#         self.marks = marks
 
-    def __add__(self, other):
-        return self.marks + other.marks
+#     def __add__(self, other):
+#         return self.marks + other.marks
     
-s1 = Student(10)
-s2 = Student(20)
+# s1 = Student(10)
+# s2 = Student(20)
 
-print("Total is :", s1 + s2)
+# print("Total is :", s1 + s2)
 
 
