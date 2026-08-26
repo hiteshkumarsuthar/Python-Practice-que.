@@ -560,25 +560,25 @@
 #Q-1
 # Hybrid Inheritance
 
-class Person:
-    def name(self):
-        print("Person's name is XYZ")
+# class Person:
+#     def name(self):
+#         print("Person's name is XYZ")
 
-class Employee(Person):
-    def work(self):
-        print("Person is an employee in Amazon.")
+# class Employee(Person):
+#     def work(self):
+#         print("Person is an employee in Amazon.")
 
-class Student(Person):
-    def study(self):
-        print("Person is a student of IIT Bombay")
+# class Student(Person):
+#     def study(self):
+#         print("Person is a student of IIT Bombay")
 
-class TeachingAssistant(Employee, Student):
-    def teaching(self):
-        print("Person is teaching AI Engineering")
+# class TeachingAssistant(Employee, Student):
+#     def teaching(self):
+#         print("Person is teaching AI Engineering")
 
-t = TeachingAssistant()
+# t = TeachingAssistant()
 
-t.name()
-t.work()
-t.study()
-t.teaching()
+# t.name()
+# t.work()
+# t.study()
+# t.teaching()
