@@ -556,3 +556,29 @@
 # print("Total is :", s1 + s2)
 
 
+
+#Q-1
+# Hybrid Inheritance
+
+class Person:
+    def name(self):
+        print("Person's name is XYZ")
+
+class Employee(Person):
+    def work(self):
+        print("Person is an employee in Amazon.")
+
+class Student(Person):
+    def study(self):
+        print("Person is a student of IIT Bombay")
+
+class TeachingAssistant(Employee, Student):
+    def teaching(self):
+        print("Person is teaching AI Engineering")
+
+t = TeachingAssistant()
+
+t.name()
+t.work()
+t.study()
+t.teaching()
