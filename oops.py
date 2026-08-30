@@ -585,40 +585,81 @@
 
 
 #Que.
-import math
-class shape:
-    def calculate_area(self):
-        pass
+# import math
+# class shape:
+#     def calculate_area(self):
+#         pass
     
-class circle(shape):
-    def __init__(self, area):
-        self.area = area
+# class circle(shape):
+#     def __init__(self, area):
+#         self.area = area
     
-    def calculate_area(self):
-        return math.pi * self.area ** 2
+#     def calculate_area(self):
+#         return math.pi * self.area ** 2
     
     
-class rectangle(shape):
-    def __init__(self, length, width):
-        self.length = length
-        self.width = width
+# class rectangle(shape):
+#     def __init__(self, length, width):
+#         self.length = length
+#         self.width = width
     
-    def calculate_area(self):
-        return self.length * self.width
+#     def calculate_area(self):
+#         return self.length * self.width
 
-class triangle(shape):
-    def __init__(self, base, height):
-        self.base = base
-        self.height = height
+# class triangle(shape):
+#     def __init__(self, base, height):
+#         self.base = base
+#         self.height = height
         
-    def calculate_area(self):
-        return 0.5 * self.base * self.height
+#     def calculate_area(self):
+#         return 0.5 * self.base * self.height
     
 
-Circle = circle(5)
-Rectangle = rectangle(10, 5)
-Tringle = triangle(10, 6)
+# Circle = circle(5)
+# Rectangle = rectangle(10, 5)
+# Tringle = triangle(10, 6)
 
-print("Calculate circle area :", Circle.calculate_area())
-print("Calculate rectangle area :", Rectangle.calculate_area())
-print("Calculate tringle area :", Tringle.calculate_area())
+# print("Calculate circle area :", Circle.calculate_area())
+# print("Calculate rectangle area :", Rectangle.calculate_area())
+# print("Calculate tringle area :", Tringle.calculate_area())
+
+
+#Que.
+class Animal:
+    def name(self, name):
+        self.name =  name
+
+    def dis_1(self):
+        print("Animal name is :", self.name)
+        
+class Mammal(Animal):
+    def ani(self, ani_name):
+        self.ani_name = ani_name
+        
+    def dis_2(self):
+        print("Animal name :", self.ani_name)
+        
+class Bird(Animal):
+    def sound(self, sounds):
+        self.sounds = sounds
+
+    def dis_3(self):
+        print("Bird sound is :", self.sounds)
+        
+class Both_Animal(Mammal, Bird):
+    def animals(self):
+        print("All Animal are part of wild life")
+        
+
+b = Both_Animal()
+
+b.name("Tiger")
+b.ani("Pandas")
+b.sound("CHU-CHU")
+
+
+b.dis_1()
+b.dis_2()
+b.dis_3()
+b.animals()        
+
