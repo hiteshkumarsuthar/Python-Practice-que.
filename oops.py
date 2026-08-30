@@ -582,3 +582,43 @@
 # t.work()
 # t.study()
 # t.teaching()
+
+
+#Que.
+import math
+class shape:
+    def calculate_area(self):
+        pass
+    
+class circle(shape):
+    def __init__(self, area):
+        self.area = area
+    
+    def calculate_area(self):
+        return math.pi * self.area ** 2
+    
+    
+class rectangle(shape):
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+    
+    def calculate_area(self):
+        return self.length * self.width
+
+class triangle(shape):
+    def __init__(self, base, height):
+        self.base = base
+        self.height = height
+        
+    def calculate_area(self):
+        return 0.5 * self.base * self.height
+    
+
+Circle = circle(5)
+Rectangle = rectangle(10, 5)
+Tringle = triangle(10, 6)
+
+print("Calculate circle area :", Circle.calculate_area())
+print("Calculate rectangle area :", Rectangle.calculate_area())
+print("Calculate tringle area :", Tringle.calculate_area())
