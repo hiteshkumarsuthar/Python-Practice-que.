@@ -625,41 +625,41 @@
 
 
 #Que.
-class Animal:
-    def name(self, name):
-        self.name =  name
+# class Animal:
+#     def name(self, name):
+#         self.name =  name
 
-    def dis_1(self):
-        print("Animal name is :", self.name)
+#     def dis_1(self):
+#         print("Animal name is :", self.name)
         
-class Mammal(Animal):
-    def ani(self, ani_name):
-        self.ani_name = ani_name
+# class Mammal(Animal):
+#     def ani(self, ani_name):
+#         self.ani_name = ani_name
         
-    def dis_2(self):
-        print("Animal name :", self.ani_name)
+#     def dis_2(self):
+#         print("Animal name :", self.ani_name)
         
-class Bird(Animal):
-    def sound(self, sounds):
-        self.sounds = sounds
+# class Bird(Animal):
+#     def sound(self, sounds):
+#         self.sounds = sounds
 
-    def dis_3(self):
-        print("Bird sound is :", self.sounds)
+#     def dis_3(self):
+#         print("Bird sound is :", self.sounds)
         
-class Both_Animal(Mammal, Bird):
-    def animals(self):
-        print("All Animal are part of wild life")
+# class Both_Animal(Mammal, Bird):
+#     def animals(self):
+#         print("All Animal are part of wild life")
         
 
-b = Both_Animal()
+# b = Both_Animal()
 
-b.name("Tiger")
-b.ani("Pandas")
-b.sound("CHU-CHU")
+# b.name("Tiger")
+# b.ani("Pandas")
+# b.sound("CHU-CHU")
 
 
-b.dis_1()
-b.dis_2()
-b.dis_3()
-b.animals()        
+# b.dis_1()
+# b.dis_2()
+# b.dis_3()
+# b.animals()        
 
