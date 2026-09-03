@@ -13,13 +13,13 @@ plt.title("Monthly Sales")
 plt.show()
 
 
-# import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
-# x = [2, 4, 6, 8]
-# y = [15, 20, 25, 30]
+x = [2, 4, 6, 8]
+y = [15, 20, 25, 30]
 
-# plt.plot(x, y)
-# plt.xlabel("-axis")
-# plt.ylabel("Y-axis")
-# plt.title("Simple Line Graph")
-# plt.show()
+plt.plot(x, y)
+plt.xlabel("-axis")
+plt.ylabel("Y-axis")
+plt.title("Simple Line Graph")
+plt.show()
