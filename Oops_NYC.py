@@ -283,26 +283,72 @@ print("Welcome to NYC with Oops")
 
 
 
-# --------------------
+# ----------------------------------------
 # Using-Decorator (@singledispatchmethod)
+# ----------------------------------------
+# from functools import singledispatchmethod
+
+# class Parent:
+#     @singledispatchmethod
+#     def add(self, value):
+#         print("Default :", value)
+        
+#     @add.register
+#     def _(self, value: int):
+#         print("INT :", value)
+        
+#     @add.register
+#     def _(self, value: str):
+#         print("STR :", value)
+        
+# obj = Parent()
+# obj.add(10)
+# obj.add("Hello")
+
+
 # --------------------
-from functools import singledispatchmethod
-
-class Parent:
-    @singledispatchmethod
-    def add(self, value):
-        print("Default :", value)
+# Encapsulation
+# --------------------
+# class Factory:
+#     def __init__(self, type, tyre, color):
+#         self.type = type # Public object Attribute
+#         self.__tyre = tyre # private object Attribute
+#         self.__color = color # private object Attribute
         
-    @add.register
-    def _(self, value: int):
-        print("INT :", value)
+#     def __details(self): # This is private method
+#         print(self.type)
+#         print(self.__tyre)
+#         print(self.__color)
         
-    @add.register
-    def _(self, value: str):
-        print("STR :", value)
         
-obj = Parent()
-obj.add(10)
-obj.add("Hello")
+# obj = Factory("Sedan", "MRF", "BALCK")
+
+# obj.__details()
 
 
+
+# --------------------
+# Abstraction
+# --------------------
+
+from abc import ABC, abstractmethod
+
+class Car(ABC):  # Abstract class
+    @abstractmethod
+    def enginestart(self):  #Abstract method
+        pass
+    
+class BMW(Car):
+    def enginestart(self):
+        print("Car Started...")
+
+class I20(Car):
+    def enginestart(self):
+        print("i20 is started...")
+        return super().enginestart()
+
+C = BMW()
+C.enginestart()
+
+I = I20()
+I.enginestart()
