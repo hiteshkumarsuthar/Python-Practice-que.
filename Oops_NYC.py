@@ -331,24 +331,71 @@ print("Welcome to NYC with Oops")
 # Abstraction
 # --------------------
 
-from abc import ABC, abstractmethod
+# from abc import ABC, abstractmethod
 
-class Car(ABC):  # Abstract class
-    @abstractmethod
-    def enginestart(self):  #Abstract method
-        pass
+# class Car(ABC):  # Abstract class
+#     @abstractmethod
+#     def enginestart(self):  #Abstract method
+#         pass
     
-class BMW(Car):
-    def enginestart(self):
-        print("Car Started...")
+# class BMW(Car):
+#     def enginestart(self):
+#         print("Car Started...")
 
-class I20(Car):
-    def enginestart(self):
-        print("i20 is started...")
-        return super().enginestart()
+# class I20(Car):
+#     def enginestart(self):
+#         print("i20 is started...")
+#         return super().enginestart()
 
-C = BMW()
-C.enginestart()
+# C = BMW()
+# C.enginestart()
 
-I = I20()
-I.enginestart()
+# I = I20()
+# I.enginestart()
+
+
+
+# --------------------
+# Dunder Methods
+# --------------------
+# class Animal:
+#     def __init__(self, name):
+#         self.name = name
+        
+#     def __str__(self):
+#         return f"Hello my name is {self.name}"
+    
+    
+# obj = Animal("Lion")
+# print(obj)
+
+# obj2 = Animal("Dog")
+# print(obj2)
+
+
+# __sub__ using dunder method
+# class number:
+#     def __init__(self, num):
+#         self.num = num
+
+#     def __sub__(self, other):
+#         return self.num - other.num
+    
+    
+# num1 = number(20)
+# num2 = number(10)
+
+# print(num1 - num2)
+
+
+                                               
+#----------------------------------------------------------------
+# dir() -> Object ke methods aur attributes ke naam batata hai. -
+# type() -> Object ka data type batata hai.                     -
+#                                                               -
+# a = 12                                                        -
+# print(type(a))                                                -
+# print(dir(a))                                                 -
+#----------------------------------------------------------------
+
+
